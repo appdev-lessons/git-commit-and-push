@@ -102,4 +102,4 @@ Visit the repo at `github.com/<your-username>/<project-name>` to see the publish
 
 Do you ever wish you could work on a completely separate version of your project in parallel to the current version? Perhaps to test an approach, or work on a new feature? And you want the option to eventually combine that code into your `main` project codebase? 
 
-Well, have a look at our documentation on [branching and merging in VSCode with GitLens](https://learn.firstdraft.com/lessons/54)!
+Well, have a look at our documentation on [branching and merging in VSCode with GitLens](https://learn.firstdraft.com/lessons/54-git-branch-and-merge)!
