@@ -16,21 +16,22 @@ Whichever environment you are working in (Codespaces, Gitpod, or Local), we expe
 
 In you VSCode window, you can note a few tabs on the left side bar:
 
-<!-- ![](/assets/vscode-explorer-git-tabs.png) -->
-![](https://res.cloudinary.com/dmxgp9oq2/image/upload/v1685990971/vscode-explorer-git-tabs_xvubcy.png)
+---
+
+![](/assets/vscode-explorer-git-tabs.png)
+
+---
 
 For now, we just need to know about the "hamburger" menu with access to the VSCode settings, the file explorer that shows us all of the files and directories in our workspace, and the "Source Control" tab, which is how we interact with Git.
 
 When you create any file or make changes to an existing file, you should see the file color change in the explorer and editor, and an icon with a number show up on the Source Control tab, indicating the number of "pending changes":
 
-<!-- ![](/assets/vscode-git-unstaged-change.png) -->
-![](https://res.cloudinary.com/dmxgp9oq2/image/upload/v1685991026/vscode-git-unstaged-change_mtqd5z.png)
+![](/assets/vscode-git-unstaged-change.png)
 {: .bleed-full }
 
 You can open the Source Control tab to view a list of the changed files. Click on any file in this view and a new editor tab will open:
 
-<!-- ![](/assets/vscode-git-diff-on-file.png) -->
-![](https://res.cloudinary.com/dmxgp9oq2/image/upload/v1685991054/vscode-git-diff-on-file_i6kx24.png)
+![](/assets/vscode-git-diff-on-file.png)
 {: .bleed-full }
 
 On the left, you see the code as it was previously; on the right, you see the new code. Lines added are highlighted in green, lines removed are highlighted in red.
@@ -47,15 +48,23 @@ The most important thing for you to remember is simple: **commit early and commi
 
 To commit, enter a short message for the snapshot (required), then press "Commit":
 
-<!-- ![](/assets/vscode-git-commit-message.png) -->
-![](https://res.cloudinary.com/dmxgp9oq2/image/upload/v1685991104/vscode-git-commit-message_n7wwl4.png)
-{: .bleed-full }
+---
+
+![](/assets/vscode-git-commit-hello-world.png)
+
+---
 
 When you click "Commit", if you have not staged your changes, which you can think of as putting the changes in a "waiting room" for the snapshot, you will see a message pop up asking if you would like to "stage all your changes and commit them directly". Click "Yes": 
 
-<!-- ![](/assets/vscode-git-stage-message.png) -->
-![](https://res.cloudinary.com/dmxgp9oq2/image/upload/v1685991137/vscode-git-stage-message_pjgdau.png)
+![](/assets/vscode-git-stage-message.png)
 {: .bleed-full }
+
+<div class="bg-red-100 py-1 px-5" markdown="1">
+
+If you do not enter a commit message, then a window will open in the VSCode editor, and you will need to enter a commit message there then close the window to proceed. You cannot commit without a message.
+
+![](/assets/vscode-git-commit-no-message.png)
+</div>
 
 After you commit, you will no longer have any pending changes and you can return to the "File Explorer" tab on the left side and continue working.
 
@@ -79,10 +88,12 @@ Whenever you are ready to store your changes on GitHub, click the "Sync" button,
 Pressing "Sync" actually does two things: it runs "git pull" to pull down any changes from the repository on github.com and then runs "git push" to publish your current commits to the repository.
 </aside>
 
-<!-- ![](/assets/vscode-sync-button.png) -->
-![](https://res.cloudinary.com/dmxgp9oq2/image/upload/v1689104419/vscode-sync-button_mrbmda.png)
+![](/assets/vscode-sync-button.png)
 
-(You may get a message after this first sync asking if you would like to periodically run "git fetch". You can say "Yes" to this.)
+<div class="bg-blue-100 py-1 px-5" markdown="1">
+
+You may get a message after this first sync asking if you would like to periodically run "git fetch". You can say "Yes" to this.
+</div>
 
 You should get into the habit of committing and pushing your code to GitHub very often. If you do, then you're certain never to lose your work, among many other benefits of using GitHub to store your code.
 
@@ -103,3 +114,5 @@ Visit the repo at `github.com/<your-username>/<project-name>` to see the publish
 Do you ever wish you could work on a completely separate version of your project in parallel to the current version? Perhaps to test an approach, or work on a new feature? And you want the option to eventually combine that code into your `main` project codebase? 
 
 Well, have a look at our documentation on [branching and merging in VSCode with GitLens](https://learn.firstdraft.com/lessons/54-git-branch-and-merge)!
+
+---
